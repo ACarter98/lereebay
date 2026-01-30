@@ -3,66 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Erée Bay Guernsey | Visitor Guide & Photos</title>
-    <meta name="description" content="Visit L'Erée Bay in Guernsey. Photos, directions, facilities, and visitor information.">
+    <title>L'Erée Bay Guernsey | Birdwatching & Nature Haven</title>
+    <meta name="description" content="A protected bay on Guernsey's west coast, famous for birdwatching, seal spotting, and the historic L'Erée Battery.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Beach","name":"L'Erée Bay","description":"L'Erée Bay in Guernsey","url":"https://lereebay.com/","address":{"@type":"PostalAddress","addressLocality":"Guernsey","addressCountry":"GG"},"isAccessibleForFree":true,"photo":["photo-1.jpg","photo-2.jpg"]}
-    </script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Beach","name":"L'Erée Bay","description":"A protected bay on Guernsey's west coast, famous for birdwatching, seal spotting, and the historic L'Erée Battery.","url":"https://lereebay.com/","address":{"@type":"PostalAddress","addressLocality":"Guernsey","addressCountry":"GG"},"isAccessibleForFree":true}</script>
     <style>
-        :root {--primary:#0066cc;--secondary:#e6f2ff;--accent:#ff6b35;--text:#1a1a1a;--light:#666}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Inter',sans-serif;line-height:1.6;color:var(--text)}
-        .hero{background:linear-gradient(135deg,var(--primary)0%,#003d7a 100%);color:#fff;padding:100px 24px 60px;text-align:center;position:relative}
-        .hero h1{font-family:'Playfair Display',serif;font-size:3.5rem;margin-bottom:20px}
-        .hero p{font-size:1.25rem;opacity:.9}
-        .section{padding:60px 24px;max-width:1200px;margin:0 auto}
-        .section-title{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:40px;text-align:center}
-        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin:40px 0}
-        .gallery-img{width:100%;height:250px;object-fit:cover;border-radius:12px;transition:transform .3s}
-        .gallery-img:hover{transform:scale(1.03)}
-        .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin:40px 0}
-        .card{background:#f8f9fa;padding:32px;border-radius:12px}
-        .card h3{color:var(--primary);margin-bottom:12px}
-        .cta{background:var(--primary);color:#fff;text-align:center;padding:60px 24px}
-        .btn{display:inline-block;background:var(--accent);color:#fff;padding:16px 32px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:20px}
-        footer{background:#f5f5f5;padding:40px 24px;text-align:center;color:var(--light)}
-        @media(max-width:768px){.hero h1{font-size:2.5rem}.gallery{grid-template-columns:1fr}}
+        :root{--p:#2d5a3d;--s:#e8f5e9;--a:#8bc34a;--t:#1a1a1a;--l:#666}
+        *{m:0;p:0;box-sizing:border-box}
+        body{font-family:'Source Sans Pro',sans-serif;line-height:1.7;color:var(--t)}
+        h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600}
+        .hero{background:var(--p);color:#fff;padding:120px 24px 80px;text-align:center}
+        .hero h1{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px}
+        .hero p{font-size:1.25rem;opacity:0.9;max-width:600px;margin:0 auto}
+        .container{max-width:900px;margin:0 auto;padding:0 24px}
+        .section{padding:80px 0}
+        .section-alt{background:var(--s)}
+        .lead{font-size:1.25rem;color:var(--l);max-width:700px}
+        .lead p{margin-bottom:1.5rem}
+        .lead h3{color:var(--p);margin:2rem 0 1rem}
+        .gallery{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:40px 0}
+        .gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+        .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:40px 0}
+        .fact{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+        .fact strong{display:block;color:var(--p);font-size:0.875rem;text-transform:uppercase;margin-bottom:4px}
+        .activities{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}
+        .activity{background:var(--p);color:#fff;padding:10px 20px;border-radius:50px}
+        .tips{background:#fff9e6;padding:30px;border-radius:8px;margin:30px 0}
+        .tips li{padding:12px 0 12px 28px;position:relative;border-bottom:1px solid rgba(0,0,0,0.08);list-style:none}
+        .tips li::before{content:"★";position:absolute;left:0;color:var(--a)}
+        .nearby{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0;justify-content:center}
+        .nearby-place{background:var(--s);color:var(--p);padding:12px 24px;border-radius:8px;font-weight:500}
+        .cta{background:var(--t);color:#fff;text-align:center;padding:80px 24px}
+        .cta-btn{display:inline-block;background:var(--a);color:#fff;padding:18px 36px;border-radius:8px;text-decoration:none;font-size:1.125rem;font-weight:600;margin-top:24px}
+        footer{background:#f5f5f5;padding:40px 24px;text-align:center;color:var(--l)}
+        @media(max-width:768px){.section{padding:60px 0}.facts{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
     <section class="hero">
-        <h1>L'Erée Bay</h1>
-        <p>Guernsey Visitor Guide</p>
-    </section>
-    
-    <section>
-        <h2 class="section-title">Photo Gallery</h2>
-        <div class="gallery">
-            <img src="photo-1.jpg" alt="L'Erée Bay" class="gallery-img">
-
+        <div class="container">
+            <h1>Where Wildlife Meets the Sea</h1>
+            <p>A protected bay on Guernsey's west coast, famous for birdwatching, seal spotting, and the historic L'Erée Battery.</p>
         </div>
     </section>
     
-    <section style="background:var(--secondary)">
-        <h2 class="section-title">About L'Erée Bay</h2>
-        <p style="text-align:center;max-width:800px;margin:0 auto;font-size:1.125rem;color:var(--light)">
-            L'Erée Bay is a beautiful beach in Guernsey, Channel Islands. 
-            This page provides essential information for visitors planning their trip.
-        </p>
+    <section class="section">
+        <div class="container">
+            <h2>About L'Erée Bay</h2>
+            <div class="lead">
+        <p>L'Erée Bay offers something increasingly rare: a genuine connection with nature. This protected bay on Guernsey's rugged west coast combines dramatic coastal scenery with exceptional wildlife viewing opportunities. The bay faces the Atlantic Ocean, receiving the full force of prevailing winds and creating a wild, untamed atmosphere.</p>
+        
+        <p>The area is designated as part of Guernsey's RAMSAR site - an internationally important wetland. The combination of salt marsh, rocky shoreline, and sandy beach creates diverse habitats that attract an impressive array of birdlife throughout the year.</p>
+        
+        <h3>Birdwatching Paradise</h3>
+        <p>Bring binoculars. L'Erée is Guernsey's premier birdwatching location. Winter brings brent geese, wigeons, and teal. Spring migration sees sandpipers, plovers, and occasional rarities. The shingle bank and salt marsh provide perfect feeding grounds for wading birds at low tide.</p>
+        
+        <h3>Seal Colony</h3>
+        <p>A small colony of grey seals regularly hauls out on the rocks at the bay's northern end. They're best viewed from the coastal path - approaching closely causes disturbance. Seals are present year-round but most visible during autumn breeding season.</p>
+        
+        <h3>Historic Defences</h3>
+        <p>The Victorian L'Erée Battery overlooks the bay, built to defend against French invasion. It's now a peaceful ruin, home to nesting seabirds. The combination of history and nature makes this a uniquely Guernsey location.</p>
+        </div>
+            <div class="activities"><div class="activity">Birdwatching</div><div class="activity">Seal spotting</div><div class="activity">Photography</div><div class="activity">Coastal walking</div><div class="activity">Historic exploration</div></div>
+        </div>
+    </section>
+    
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery"><img src="photo-1.jpg" alt="L'Erée Bay" loading="lazy"></div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Essential Information</h2>
+            <div class="facts"><div class="fact"><strong>RAMSAR Status</strong><span>Internationally protected wetland</span></div><div class="fact"><strong>Bird Species</strong><span>120+ recorded annually</span></div><div class="fact"><strong>Seal Colony</strong><span>8-12 grey seals resident</span></div><div class="fact"><strong>Best Wildlife</strong><span>2 hours before high tide</span></div><div class="fact"><strong>Access</strong><span>Coastal path or narrow road</span></div></div>
+            <div class="tips"><h3>Visitor Tips</h3><ul><li>Bring binoculars - essential for wildlife viewing</li><li>Check tide tables - birds feed at low tide</li><li>Park at L'Erée Battery - limited spaces</li><li>Stay on paths - salt marsh is fragile habitat</li><li>Dogs must be on leads - ground nesting birds</li><li>No cafes nearby - bring refreshments</li></ul></div>
+        </div>
+    </section>
+    
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Nearby Attractions</h2>
+            <div class="nearby"><div class="nearby-place">L'Erée Battery (adjacent)</div><div class="nearby-place">Fort Pezeries (1 mile)</div><div class="nearby-place">Rocquaine Bay (2 miles)</div></div>
+        </div>
     </section>
     
     <section class="cta">
-        <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:16px">Get Directions</h2>
-        <p>Plan your visit to L'Erée Bay</p>
-        <a href="https://maps.app.goo.gl/xqL9QHjth1QbzdA79" class="btn" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+        <div class="container">
+            <h2>Plan Your Visit</h2>
+            <p>Get directions to L'Erée Bay</p>
+            <a href="https://maps.app.goo.gl/xqL9QHjth1QbzdA79" class="cta-btn" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2026 lereebay.com</p>
+        <div class="container">
+            <p>&copy; 2026 lereebay.com • Guernsey Visitor Guide</p>
+        </div>
     </footer>
 </body>
 </html>
